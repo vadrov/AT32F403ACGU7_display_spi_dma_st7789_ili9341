@@ -121,9 +121,9 @@ static void Init_SPI(void)
 	gpio_init_struct.gpio_pull = GPIO_PULL_NONE;
 	gpio_init(GPIOB, &gpio_init_struct);
 
-	/* Параметры DMA1_Channel1 - канал приема */
+	/* Параметры DMA1_Channel1 - канал передачи */
 	crm_periph_clock_enable(CRM_DMA1_PERIPH_CLOCK, TRUE); //Тактирование контроллера DMA1
-	nvic_irq_enable(DMA1_Channel1_IRQn, 2, 0); /* SD-карта - передача (TX) */
+	nvic_irq_enable(DMA1_Channel1_IRQn, 2, 0); /* Разрешение прерываний от канала DMA1_Channel1 */
 	/* Привязываем к 1 каналу DMA1 исходящий поток SPI2 */
 	dma_flexible_config(DMA1, FLEX_CHANNEL1, DMA_FLEXIBLE_SPI2_TX);
 	dma_reset(DMA1_CHANNEL1);
