@@ -27,7 +27,7 @@ volatile uint32_t millis = 0;
 static void Init_TMR(void)
 {
 	/*--------- Таймер TMR3 с каналом 4 PWM (для подсветки дисплея посредством) ----------*/
-	crm_periph_clock_enable(CRM_TMR3_PERIPH_CLOCK, TRUE); //Тактирование таймера TIM3
+	crm_periph_clock_enable(CRM_TMR3_PERIPH_CLOCK, TRUE); //Тактирование таймера TMR3
 
 	gpio_init_type  gpio_init_struct = {0};
 	crm_periph_clock_enable(CRM_GPIOB_PERIPH_CLOCK, TRUE); //Тактирование порта B
