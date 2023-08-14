@@ -17,5 +17,6 @@ See the description of the driver, functions and parameters in the project https
 make -f ../Display/makefile
 ```
 Ассемблерный вариант драйвера можно включать/выключать с помощью макроопределения LCD_USE_ASSEMBLER в заголовочном файле display_config.h\
+
 Контакты: [Youtube](https://www.youtube.com/@VadRov) [Дзен](https://dzen.ru/vadrov) [VK](https://vk.com/vadrov) [Telegram](https://t.me/vadrov_channel)\
 Поддержать автора: [donate.qiwi](https://donate.qiwi.com/payin/VadRov)  [donate.yoomoney](https://yoomoney.ru/to/4100117522443917)
