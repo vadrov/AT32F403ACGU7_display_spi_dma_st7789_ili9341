@@ -1,6 +1,8 @@
 # AT32F403ACGU7_display_spi_dma
  Connecting the displays to the AT32F403A MCU via spi with DMA.
 
+AT32F403A high-performance microcontrollers, powered by 32-bit ARM® Cortex®-M4 core, utilize advanced process to achieve 240 MHz computing speed. The embedded single precision floating-point unit (FPU) and digital signal processor (DSP), rich peripherals and flexible clock control mechanism can meet an extensive range of applications. The superior memory design supports up to 1 MB Flash memory and 224 KB SRAM, with the excellent Flash access zero wait far beyond the same level of the chip industry.
+
 Connection:
 ```
 LCD_SCL ---> PB13
