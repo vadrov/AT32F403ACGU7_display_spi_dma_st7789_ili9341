@@ -14,6 +14,10 @@ LCD_CS  ---> PB8
 LCD_BLK ---> PB1
 ```
 See the description of the driver, functions and parameters in the project https://github.com/vadrov/stm32-display-spi-dma
+All driver files are located in the Display folder.
+Some driver functions are written in assembly language. Assembly functions use variable offsets in the LCD_Handler structure. These offsets are generated automatically by a special makefile script (in the Display folder) when building the project (the header file display_offsets.h is generated). In your project using this display driver, in the project properties (AT32 IDE) C/C++ Build -> Settings -> Build Steps in the Pre-Build Steps option, write:
+make -f ../Display/makefile
+The assembler version of the driver can be turned on/off using the LCD_USE_ASSEMBLER macro definition in the header file display_config.h
 
 Смотрите описание драйвера, функций и параметров в проекте https://github.com/vadrov/stm32-display-spi-dma
 
